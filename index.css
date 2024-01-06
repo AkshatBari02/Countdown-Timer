@@ -118,6 +118,7 @@ h1{
         .super{
             margin-left: 2.3rem;
         }
+        
       }
       
       @media (min-width: 280px) and (max-width: 477px) {
@@ -178,6 +179,10 @@ h1{
         .txt h2{
             padding: 31px 15px 0px 15px;
             font-size: small;
+        }
+        .time-over{
+            padding:0px 0px 0px 3px !important;
+            margin-top: -7px !important;
         }
         .btn{
             margin-left: -20px;
