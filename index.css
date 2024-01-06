@@ -1,5 +1,8 @@
 body{
-    background-color: black;
+    /* background-color: black; */
+    background: url(./accessories/bg1.jpg) no-repeat center;
+    display: flex;
+    justify-content: center;
 }
 .container{
     padding: 67px 80px;
@@ -10,13 +13,13 @@ body{
     border-radius: 50%;
     height: 200px;
     width: 200px;
-    margin: -6% 37%;
+    margin: -11% 18.5%;
     box-shadow: 10px 15px 15px gray;
 }
 button:hover{
     background-color: blue;
     color: white;
-    font-size:1.1rem;
+    font-size:1.01rem;
     cursor: pointer;
 }
 .hand{
@@ -29,6 +32,10 @@ button:hover{
 #displayTime{
     padding: 0px 60px;
     margin-top: -7px;
+}
+.time-over{
+    padding:0px 50px 0px 40px !important;
+    margin-top: -7px !important;
 }
 h1{
     padding: 0px 55px;
@@ -59,7 +66,7 @@ h1{
     padding: 0px 63px;
 }
 .btn{
-    margin-left: 10px;
+    margin-left: 14px;
     position: fixed;
 }
 .btn-p{
@@ -98,3 +105,123 @@ h1{
         90% {border:5px solid #bdb280;}
         100%{border:5px solid #39f;}
     }
+
+    @media (max-height:1080px) and (max-width: 1920px) {
+        body{
+            background: url(./accessories/bg11.jpg) no-repeat center;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    @media (min-width: 477px) and (max-width: 525px) {
+        .super{
+            margin-left: 2.3rem;
+        }
+      }
+      
+      @media (min-width: 280px) and (max-width: 477px) {
+        /* .super{
+            margin-left: 2.3rem;
+        } */
+        .container{
+            padding: 67px 80px;
+            justify-content: center;
+            align-items: center;
+            background-color: bisque;
+            border: 8px solid coral;
+            border-radius: 50%;
+            height: 100px;
+            width: 75px;
+            margin: -11% 11.5%;
+            box-shadow: 10px 15px 15px gray;
+        }
+        button:hover{
+            background-color: blue;
+            color: white;
+            font-size:1.01rem;
+            cursor: pointer;
+        }
+        .hand{
+            width: 10px;
+            height: 100px;
+            margin-top: -71%;
+            margin-left: 45%;
+            background-color: red;
+        }
+        #displayTime{
+            padding: 0px 17px;
+            margin-top: -9px;
+        }
+        h1{
+            padding: 0px 55px;
+        }
+        .tik{
+            width: 10px;
+            height: 93px;
+            margin: 10px 30px;
+            animation-name: timing;
+            animation-duration: 60s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            transform-origin: top;
+            z-index: -1;
+        }
+        @keyframes timing{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        .txt{
+            margin-top: -114px;
+        }
+        .txt h2{
+            padding: 31px 15px 0px 15px;
+            font-size: small;
+        }
+        .btn{
+            margin-left: -20px;
+            position: fixed;
+            margin-top: -6px;
+        }
+        .btn-p{
+            padding: 1.2px;
+            border-radius: 6px;
+            font-size: x-small;
+        }
+        .emoji{
+            padding: 0px 9px;
+            font-size: 40px;
+        }
+        .clock-top{
+            display: flex; 
+            justify-content: center; 
+            padding-top: 93px;
+        }
+        .circle{    
+            background-color: brown;
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+            margin: 0px 27px;
+            position: relative;
+            z-index: -1;
+            border: 8px solid white;
+            animation-name: ears;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            }
+            @keyframes ears{
+                0% {border: 5px solid #39f;}
+                15% {border:5px solid #8bc5d1;}
+                30% {border:5px solid #f8cb4a;}
+                45% {border:5px solid #95b850;}
+                60% {border:5px solid #944893;}
+                75% {border:5px solid #c71f00;}
+                90% {border:5px solid #bdb280;}
+                100%{border:5px solid #39f;}
+            }
+        
+      }

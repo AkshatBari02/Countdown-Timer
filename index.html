@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <div class="super">
     <div class="clock-top">
         <div class="circle"></div>
         <div class="circle"></div>
@@ -19,7 +20,7 @@
         </div>
         <div class="txt"> <h2>timer</h2>
             <h2 id="displayTime">00:00</h2>
-            <audio src="https://pagalworld.cool/files/download/type/320/id/671" type="audio/mp3"   id="Sound"></audio>
+            <audio src="./accessories/sound.mp3" type="audio/mp3"   id="Sound" preload="auto"></audio>
             <div class="btn">
                 <button type="button" onclick="Start()" id="start" class="btn-p">Start</button>
                 
@@ -29,6 +30,7 @@
             <div>    
         </div>
     </div>
+</div>
     <script src="index.js"></script>
 </body>
 </html>

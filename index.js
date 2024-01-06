@@ -22,9 +22,17 @@ let secs;
                 clearInterval(interval);
                 document.getElementById("Sound").play();
                 displayElement.innerHTML = "Time's up!";
+                setTimeout(() => {
+                    const soundElement = document.getElementById("Sound");
+                    soundElement.pause();
+                    soundElement.currentTime = 0; // Reset audio to the beginning
+                }, 20000);
+                displayElement.classList.add("time-over");
             }
         }, 1000);
     }
     function Stop(){
-        document.getElementById("Sound").pause();
+            const soundElement = document.getElementById("Sound");
+            soundElement.pause();
+            soundElement.currentTime = 0; // Reset audio to the beginning
     }
