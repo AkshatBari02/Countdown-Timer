@@ -143,8 +143,8 @@ h1{
             box-shadow: 10px 15px 15px gray;
         }
         button:active{
-            background-color: blue;
-            color: white;
+            background-color: teal;
+            color: antiquewhite;
             font-size:1.01rem;
             cursor: pointer;
         }
