@@ -1,6 +1,7 @@
 body{
     /* background-color: black; */
-    background: url(./accessories/bg1.jpg) no-repeat center;
+    background: url(./accessories/bg1.jpg) no-repeat center ;
+    background-size: cover;
     display: flex;
     justify-content: center;
 }
@@ -120,9 +121,6 @@ h1{
       }
       
       @media (min-width: 280px) and (max-width: 477px) {
-        /* .super{
-            margin-left: 2.3rem;
-        } */
         .container{
             padding: 67px 80px;
             justify-content: center;
